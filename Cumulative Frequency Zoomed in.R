@@ -5,8 +5,8 @@
 library(dplyr)
 library(ggplot2)
 
-data <- read.csv("Dates.csv") # opens the csv file
-column_data <- data[, 5] # processes column 5 (the one w/ the dates)
+data <- read.csv("NCDMPH_Data.csv") # opens the csv file
+column_data <- data[, 15] # processes column 5 (the one w/ the dates)
 
 # Store dates in column_data
 column_data <- as.Date(column_data, format = "%m/%d/%Y")  # Adjust format as needed
