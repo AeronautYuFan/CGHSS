@@ -1,8 +1,12 @@
 #' This Script creates a zoomed in cumulative frequency timeline
 #' Author: Yu Fan Mei 
 #' Date created: September 3, 2024
+#' FOR DEALLOCATING MEMORY: rm(list = ls()) (VERY DANGEROUS)
 library(dplyr)
 library(ggplot2)
+
+data <- read.csv("Dates.csv") # opens the csv file
+column_data <- data[, 5] # processes column 5 (the one w/ the dates)
 
 # Store dates in column_data
 column_data <- as.Date(column_data, format = "%m/%d/%Y")  # Adjust format as needed
@@ -40,3 +44,4 @@ ggplot(date_data, aes(x = Date, y = Cumulative_Count)) +
     axis.text.x = element_text(angle = 45, hjust = 1)  # Rotate x-axis labels for better readability
   )
 
+rm(list = ls()) # deallocates all variables (being done so all scripts can be standalone
