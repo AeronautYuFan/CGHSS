@@ -2,9 +2,13 @@
 #' and create a cumulative frequency chart
 #' Author: Yu Fan Mei 
 #' Date created: September 3, 2024
+#' FOR DEALLOCATING MEMORY: rm(list = ls()) (VERY DANGEROUS)
 
 library(dplyr)
 library(ggplot2)
+
+data <- read.csv("Dates.csv") # opens the csv file
+column_data <- data[, 5] # processes column 5 (the one w/ the dates)
 
 # Store dates in column_data
 column_data <- as.Date(column_data, format = "%m/%d/%Y")
