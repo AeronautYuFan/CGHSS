@@ -1,6 +1,6 @@
 # CGHSS
 
-This repository holds the published data/code for all of Yu Fan Mei's work related to the Georgetown Center for Glubal Health Science & Security (CGHSS) under R. Katz & C. Weets. Data visualization will primarily be done in R but may also use other languages such as Python as I am still in the process of learning. All commits will be manual until I better understand how Github works (which hopefully will be soon)
+Repository to store all code for my work with the Health Governance Lab & Global Health Institute. Currently doing data visualization & network analysis for the NCDMPH. Special thanks to Ciara.
 
 Other Links:
 
