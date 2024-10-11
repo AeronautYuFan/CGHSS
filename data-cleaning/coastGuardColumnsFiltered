@@ -1,0 +1,16 @@
+import pandas as pd
+import os
+
+# Load the filtered CSV file
+filtered_df = pd.read_csv("data-cleaning/data-coastguard-only.csv")
+
+# Select the desired columns
+new_columns_df = filtered_df[['Entity Empowered', 'Citation', 'Document Type', 'Location', 'Triggering Event']]
+
+# Define the path for the new CSV file
+new_file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'coastguard-selected-columns.csv')
+
+# Save the new DataFrame to a new CSV file
+new_columns_df.to_csv(new_file_path, index=False)
+
+print(f"New CSV with selected columns saved to: {new_file_path}")
