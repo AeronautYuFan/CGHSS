@@ -20,3 +20,18 @@ new_file_path = os.path.join(script_directory, 'data-coastguard-only.csv')
 filtered_df.to_csv(new_file_path, index=False)
 
 print(f"Filtered data saved to: {new_file_path}")
+
+##########################################
+
+dCG = pd.read_csv(new_file_path)
+
+new_df = dCG[['Citation', 'Triggering Event', 'Location', 'Powers Invoked']]
+
+# Get the current script directory
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Define the path for the new CSV file
+new_file_path = os.path.join(script_dir, 'filteredUSCGdata.csv')
+
+# Save the new DataFrame to the specified path
+new_df.to_csv(new_file_path, index=False)
