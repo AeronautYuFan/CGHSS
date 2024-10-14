@@ -10,6 +10,7 @@
             stroke: #999;
             stroke-opacity: 0.6;
             stroke-width: 2;
+            fill: none; /* Ensure there is no fill */
         }
         .node {
             cursor: pointer;
@@ -29,17 +30,32 @@
         const svg = d3.select("svg"),
               g = svg.append("g").attr("transform", "translate(0,0)");
 
-        const nodes = [{ name: "US Coast Guard" }];
+        // Define arrow markers
+        svg.append("defs").selectAll("marker")
+            .data(["end"]) // Marker ID
+          .enter().append("marker")
+            .attr("id", "arrow")
+            .attr("viewBox", "0 0 10 10")
+            .attr("refX", 15) // Position of the arrowhead
+            .attr("refY", 5)
+            .attr("markerWidth", 6)
+            .attr("markerHeight", 6)
+            .attr("orient", "auto")
+            .append("path")
+            .attr("d", "M0,0 L10,5 L0,10 L3,5 Z") // Arrow shape
+            .attr("fill", "#999");
+
+        const nodes = [{ name: "US Coast Guard", type: "coastguard" }];
         const links = [];
 
         // Build the nodes and links
         for (const [event, powers] of Object.entries(graphData)) {
-            nodes.push({ name: event });
+            nodes.push({ name: event, type: "event" });
             links.push({ source: "US Coast Guard", target: event }); // Link US Coast Guard to each event
 
             // Create links from each event to its associated powers
             for (const [power, citations] of Object.entries(powers)) {
-                nodes.push({ name: power, citations }); // Store citations with power
+                nodes.push({ name: power, citations, type: "power" }); // Store citations with power
                 links.push({ source: event, target: power }); // Link event to each power
             }
         }
@@ -54,7 +70,8 @@
           .selectAll("line")
           .data(links)
           .enter().append("line")
-            .attr("class", "link");
+            .attr("class", "link")
+            .attr("marker-end", "url(#arrow)"); // Apply marker to the end of the link
 
         const node = g.append("g")
             .attr("class", "nodes")
@@ -70,7 +87,13 @@
             });
 
         node.append("circle")
-            .attr("r", 5);
+            .attr("r", 5)
+            .attr("fill", d => {
+                if (d.type === "coastguard") return "orange"; // Coast Guard node
+                if (d.type === "event") return "red";        // Triggering event nodes
+                if (d.type === "power") return "green";      // Power invoked nodes
+                return "gray"; // Default color
+            });
 
         node.append("text")
             .text(d => d.name)
