@@ -1,5 +1,4 @@
 from flask import Flask, render_template
-import json
 import pandas as pd
 
 app = Flask(__name__)
@@ -22,10 +21,9 @@ def index():
             
             for power in powers:
                 power = power.strip().strip('"')
-                if power not in graph_data:
-                    graph_data[power] = []  # Store citations directly under powers
-                
-                graph_data[power].append(citation)  # Store citations for each power
+                if power not in graph_data[event]:
+                    graph_data[event][power] = []  # Initialize citation list
+                graph_data[event][power].append(citation)  # Store citations for each power
 
     return render_template('index.html', graph_data=graph_data)
 

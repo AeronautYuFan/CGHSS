@@ -16,7 +16,7 @@
         }
         .node text {
             font-size: 10px;
-            text-anchor: middle; /* Center text */
+            text-anchor: middle;
         }
     </style>
 </head>
@@ -38,15 +38,15 @@
             links.push({ source: "US Coast Guard", target: event }); // Link US Coast Guard to each event
 
             // Create links from each event to its associated powers
-            for (const power of Object.keys(powers)) {
-                nodes.push({ name: power, citations: powers[power] }); // Store citations with power
+            for (const [power, citations] of Object.entries(powers)) {
+                nodes.push({ name: power, citations }); // Store citations with power
                 links.push({ source: event, target: power }); // Link event to each power
             }
         }
 
         const simulation = d3.forceSimulation(nodes)
-            .force("link", d3.forceLink().id(d => d.name).distance(100)) // Adjust distance
-            .force("charge", d3.forceManyBody().strength(-200)) // Adjust charge strength
+            .force("link", d3.forceLink().id(d => d.name).distance(100))
+            .force("charge", d3.forceManyBody().strength(-200))
             .force("center", d3.forceCenter(width / 2, height / 2));
 
         const link = g.append("g")
