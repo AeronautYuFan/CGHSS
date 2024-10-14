@@ -7,7 +7,6 @@
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <style>
         .link {
-            stroke: #999;
             stroke-opacity: 0.6;
             stroke-width: 2;
             fill: none; /* Ensure there is no fill */
@@ -19,10 +18,24 @@
             font-size: 10px;
             text-anchor: middle;
         }
+        /* Tooltip styles */
+        .tooltip {
+            position: absolute;
+            text-align: left;
+            width: auto;
+            padding: 5px;
+            font: 12px sans-serif;
+            background: lightsteelblue;
+            border: 1px solid #999;
+            border-radius: 4px;
+            pointer-events: none;
+            visibility: hidden; /* Initially hidden */
+        }
     </style>
 </head>
 <body>
     <svg width="960" height="600"></svg>
+    <div class="tooltip"></div> <!-- Tooltip element -->
     <script>
         const graphData = {{ graph_data | tojson }};
         const width = 960, height = 600;
@@ -32,18 +45,18 @@
 
         // Define arrow markers
         svg.append("defs").selectAll("marker")
-            .data(["end"]) // Marker ID
+            .data(["red", "green"]) // Define separate markers for red and green
           .enter().append("marker")
-            .attr("id", "arrow")
+            .attr("id", d => d === "red" ? "arrow-red" : "arrow-green")
             .attr("viewBox", "0 0 10 10")
-            .attr("refX", 15) // Position of the arrowhead
+            .attr("refX", 10) // Position of the arrowhead
             .attr("refY", 5)
-            .attr("markerWidth", 6)
-            .attr("markerHeight", 6)
+            .attr("markerWidth", 6) // Width of the arrow
+            .attr("markerHeight", 6) // Height of the arrow
             .attr("orient", "auto")
             .append("path")
             .attr("d", "M0,0 L10,5 L0,10 L3,5 Z") // Arrow shape
-            .attr("fill", "#999");
+            .attr("fill", d => d); // Set fill color to red or green
 
         const nodes = [{ name: "US Coast Guard", type: "coastguard" }];
         const links = [];
@@ -51,12 +64,12 @@
         // Build the nodes and links
         for (const [event, powers] of Object.entries(graphData)) {
             nodes.push({ name: event, type: "event" });
-            links.push({ source: "US Coast Guard", target: event }); // Link US Coast Guard to each event
+            links.push({ source: "US Coast Guard", target: event, color: "red" }); // Link US Coast Guard to each event
 
             // Create links from each event to its associated powers
             for (const [power, citations] of Object.entries(powers)) {
                 nodes.push({ name: power, citations, type: "power" }); // Store citations with power
-                links.push({ source: event, target: power }); // Link event to each power
+                links.push({ source: event, target: power, color: "green" }); // Link event to each power
             }
         }
 
@@ -71,23 +84,19 @@
           .data(links)
           .enter().append("line")
             .attr("class", "link")
-            .attr("marker-end", "url(#arrow)"); // Apply marker to the end of the link
+            .attr("marker-end", d => d.color === "red" ? "url(#arrow-red)" : "url(#arrow-green)") // Use color-based markers
+            .attr("stroke", d => d.color) // Set edge color based on the link data
+            .attr("stroke-opacity", d => d.color === "red" ? 0.4 : 0.6); // Adjust opacity
 
         const node = g.append("g")
             .attr("class", "nodes")
           .selectAll("g")
           .data(nodes)
           .enter().append("g")
-            .attr("class", "node")
-            .on("mouseover", (event, d) => {
-                if (d.citations) {
-                    const citations = d.citations || [];
-                    alert(`Citations: ${citations.join(', ')}`); // Show citations on hover
-                }
-            });
+            .attr("class", "node");
 
         node.append("circle")
-            .attr("r", 5)
+            .attr("r", 12) // Increased radius for larger nodes
             .attr("fill", d => {
                 if (d.type === "coastguard") return "orange"; // Coast Guard node
                 if (d.type === "event") return "red";        // Triggering event nodes
@@ -100,6 +109,22 @@
             .attr("y", 15)
             .attr("font-size", "10px")
             .attr("text-anchor", "middle");
+
+        // Tooltip functionality
+        const tooltip = d3.select(".tooltip");
+
+        node.on("mouseover", (event, d) => {
+            if (d.type === "power" && d.citations) {
+                const citationsList = d.citations.join('<br>'); // Create list of citations
+                tooltip.style("visibility", "visible")
+                       .html(`Citations:<br>${citationsList}`); // Use HTML for line breaks
+            }
+        }).on("mousemove", (event) => {
+            tooltip.style("top", (event.pageY - 10) + "px")
+                   .style("left", (event.pageX + 10) + "px");
+        }).on("mouseout", () => {
+            tooltip.style("visibility", "hidden");
+        });
 
         simulation
             .nodes(nodes)
