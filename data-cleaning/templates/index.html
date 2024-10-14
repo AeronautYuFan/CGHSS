@@ -43,6 +43,17 @@
         const svg = d3.select("svg"),
               g = svg.append("g").attr("transform", "translate(0,0)");
 
+        // Define zoom behavior
+        const zoom = d3.zoom()
+            .scaleExtent([0.5, 3]) // Set zoom limits
+            .on("zoom", (event) => {
+                g.attr("transform", event.transform);
+                g.selectAll("circle").attr("r", 12 / event.transform.k); // Adjust node size
+                g.selectAll("text").attr("font-size", `${10 / event.transform.k}px`); // Adjust text size
+            });
+
+        svg.call(zoom);
+
         // Define arrow markers
         svg.append("defs").selectAll("marker")
             .data(["red", "green"]) // Define separate markers for red and green
@@ -96,7 +107,7 @@
             .attr("class", "node");
 
         node.append("circle")
-            .attr("r", 12) // Increased radius for larger nodes
+            .attr("r", 12) // Default radius for nodes
             .attr("fill", d => {
                 if (d.type === "coastguard") return "orange"; // Coast Guard node
                 if (d.type === "event") return "red";        // Triggering event nodes
