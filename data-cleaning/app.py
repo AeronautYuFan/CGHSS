@@ -1,13 +1,15 @@
 from flask import Flask, render_template
 import pandas as pd
+import os
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder="static")  # Make sure Flask knows where to find static files
 
 @app.route('/')
 def index():
-    # Load and process the CSV file from the data-cleaning directory
-    df = pd.read_csv('data-cleaning/filteredUSCGdata.csv')
-    
+    # Load and process the CSV file
+    df = pd.read_csv('data-cleaning/filteredUSCGdata.csv')  # Adjust path if needed
+
+    # Prepare data for rendering
     graph_data = {}
     for index, row in df.iterrows():
         events = row['Triggering Event'].split(',') if pd.notna(row['Triggering Event']) else []
@@ -22,8 +24,8 @@ def index():
             for power in powers:
                 power = power.strip().strip('"')
                 if power not in graph_data[event]:
-                    graph_data[event][power] = []  # Initialize citation list
-                graph_data[event][power].append(citation)  # Store citations for each power
+                    graph_data[event][power] = []
+                graph_data[event][power].append(citation)
 
     return render_template('index.html', graph_data=graph_data)
 
