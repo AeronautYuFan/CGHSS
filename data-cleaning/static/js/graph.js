@@ -40,7 +40,7 @@ const nodes = [{ name: "US Coast Guard", type: "coastguard" }];
 const links = [];
 
 // Track selection state
-let selectedNode = null;
+let selectedNodes = new Set();
 
 // Build nodes and links from graphData
 let eventIndex = 0, powerIndex = 0;
@@ -110,24 +110,22 @@ node.append("circle")
     .attr("fill", d => d.type === "coastguard" ? "orange" : d.type === "event" ? "red" : "green")
     .on("click", (event, d) => {
         event.stopPropagation(); // Prevents click from bubbling up to the SVG
-        if (selectedNode === d) {
-            // Deselect node if clicked again
-            selectedNode = null;
-            node.selectAll("circle").style("opacity", 1);
-            link.style("opacity", 1);
+
+        // Toggle node selection if Ctrl key is held
+        if (event.ctrlKey) {
+            if (selectedNodes.has(d)) {
+                selectedNodes.delete(d);
+            } else {
+                selectedNodes.add(d);
+            }
         } else {
-            // Select new node
-            selectedNode = d;
-
-            // Highlight only adjacent nodes and edges
-            node.selectAll("circle").style("opacity", node => {
-                return node === d || links.some(link => (link.source === d && link.target === node) || (link.target === d && link.source === node)) ? 1 : 0.1;
-            });
-
-            link.style("opacity", link => {
-                return link.source === d || link.target === d ? 1 : 0.1;
-            });
+            // Clear selection if not holding Ctrl
+            selectedNodes.clear();
+            selectedNodes.add(d);
         }
+
+        // Update visibility of nodes and edges
+        updateGraphVisibility();
     });
 
 // Node labels
@@ -155,7 +153,27 @@ node.on("mouseover", (event, d) => {
 
 // Reset the graph when clicking on the SVG background
 svg.on("click", () => {
-    selectedNode = null;
-    node.selectAll("circle").style("opacity", 1);
-    link.style("opacity", 1);
+    selectedNodes.clear();
+    updateGraphVisibility();
 });
+
+// Function to update graph visibility based on selected nodes
+function updateGraphVisibility() {
+    node.selectAll("circle").style("opacity", node => {
+        return selectedNodes.size === 0 ||
+            Array.from(selectedNodes).some(selectedNode =>
+                links.some(link =>
+                    (link.source === selectedNode && link.target === node) ||
+                    (link.target === selectedNode && link.source === node) ||
+                    selectedNode === node
+                )
+            ) ? 1 : 0.1;
+    });
+
+    link.style("opacity", link => {
+        return selectedNodes.size === 0 ||
+            Array.from(selectedNodes).some(selectedNode =>
+                link.source === selectedNode || link.target === selectedNode
+            ) ? 1 : 0.1;
+    });
+}
