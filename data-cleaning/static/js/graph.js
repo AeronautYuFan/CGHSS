@@ -1,21 +1,21 @@
 // graph.js
 
-// Constants for layout
+// Define radius and layout constants
 const radiusCenter = 100;
 const radiusEvent = 200;
-const radiusPower = 350;
+const radiusPower = 450;
 const width = 960, height = 600;
 
-// Base SVG setup
+// SVG setup
 const svg = d3.select("svg"),
       g = svg.append("g").attr("transform", `translate(${width / 2}, ${height / 2})`);
 
-// Zoom behavior
+// Define zoom behavior
 const zoom = d3.zoom()
     .scaleExtent([0.5, 3])
     .on("zoom", (event) => {
         g.attr("transform", event.transform);
-        g.selectAll("circle").attr("r", 7 / event.transform.k); 
+        g.selectAll("circle").attr("r", 7 / event.transform.k);
         g.selectAll("text").attr("font-size", `${10 / event.transform.k}px`);
     });
 svg.call(zoom);
@@ -39,6 +39,9 @@ svg.append("defs").selectAll("marker")
 const nodes = [{ name: "US Coast Guard", type: "coastguard" }];
 const links = [];
 
+// Track selection state
+let selectedNode = null;
+
 // Build nodes and links from graphData
 let eventIndex = 0, powerIndex = 0;
 for (const [event, powers] of Object.entries(graphData)) {
@@ -48,7 +51,16 @@ for (const [event, powers] of Object.entries(graphData)) {
 
     for (const [power, citations] of Object.entries(powers)) {
         if (!nodes.some(node => node.name === power)) {
-            nodes.push({ name: power, citations, type: "power", fx: radiusPower * Math.cos(powerIndex), fy: radiusPower * Math.sin(powerIndex) });
+            const fxPos = radiusPower * Math.cos(powerIndex);
+            const fyPos = radiusPower * Math.sin(powerIndex);
+
+            nodes.push({
+                name: power,
+                citations,
+                type: "power",
+                fx: fxPos,
+                fy: fyPos,
+            });
             powerIndex += (2 * Math.PI) / Object.values(powers).length;
         }
         links.push({ source: event, target: power, color: "green" });
@@ -58,8 +70,9 @@ for (const [event, powers] of Object.entries(graphData)) {
 // D3 force simulation
 const simulation = d3.forceSimulation(nodes)
     .force("link", d3.forceLink().id(d => d.name).distance(d => d.color === "red" ? radiusEvent - radiusCenter : radiusPower - radiusEvent))
-    .force("charge", d3.forceManyBody().strength(-50))
+    .force("charge", d3.forceManyBody().strength(-100))
     .force("center", d3.forceCenter(0, 0))
+    .force("collide", d3.forceCollide(25))
     .on("tick", () => {
         link
             .attr("x1", d => d.source.x)
@@ -91,10 +104,31 @@ const node = g.append("g")
     .enter().append("g")
     .attr("class", "node");
 
-// Node circles with fixed sizes
+// Node circles
 node.append("circle")
-    .attr("r", d => d.type === "coastguard" ? 10 : 7)
-    .attr("fill", d => d.type === "coastguard" ? "orange" : d.type === "event" ? "red" : "green");
+    .attr("r", 7)
+    .attr("fill", d => d.type === "coastguard" ? "orange" : d.type === "event" ? "red" : "green")
+    .on("click", (event, d) => {
+        event.stopPropagation(); // Prevents click from bubbling up to the SVG
+        if (selectedNode === d) {
+            // Deselect node if clicked again
+            selectedNode = null;
+            node.selectAll("circle").style("opacity", 1);
+            link.style("opacity", 1);
+        } else {
+            // Select new node
+            selectedNode = d;
+
+            // Highlight only adjacent nodes and edges
+            node.selectAll("circle").style("opacity", node => {
+                return node === d || links.some(link => (link.source === d && link.target === node) || (link.target === d && link.source === node)) ? 1 : 0.1;
+            });
+
+            link.style("opacity", link => {
+                return link.source === d || link.target === d ? 1 : 0.1;
+            });
+        }
+    });
 
 // Node labels
 node.append("text")
@@ -117,4 +151,11 @@ node.on("mouseover", (event, d) => {
            .style("left", (event.pageX + 10) + "px");
 }).on("mouseout", () => {
     tooltip.style("visibility", "hidden");
+});
+
+// Reset the graph when clicking on the SVG background
+svg.on("click", () => {
+    selectedNode = null;
+    node.selectAll("circle").style("opacity", 1);
+    link.style("opacity", 1);
 });
