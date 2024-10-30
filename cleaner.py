@@ -39,9 +39,8 @@ for index, row in cleaned_dataSet.iterrows():
             # Add the agency to the processed set
             agencies_processed.add(agency)
 
-# End time for runtime metric
+print(f"CSV files have been created for {len(agencies_processed)} agencies.")
+# runtime calculator
 end_time = time.time()
 runtime = end_time - start_time
-
-print(f"CSV files have been created for {len(agencies_processed)} agencies.")
 print(f"Total runtime: {runtime:.5f} seconds.")
