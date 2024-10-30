@@ -2,6 +2,7 @@ import pandas as pd
 import file_utils
 import os
 import time
+import re
 
 start_time = time.time()
 
@@ -26,8 +27,11 @@ for index, row in cleaned_dataSet.iterrows():
             agency_folder = os.path.join(output_dir, agency.replace(" ", ""))
             os.makedirs(agency_folder, exist_ok=True)
 
-            # Define the filtered DataFrame for the current agency
-            filtered_data = cleaned_dataSet[cleaned_dataSet['Entity Empowered'].str.contains(agency, na=False)]
+            # Create a regex pattern to match the exact agency name
+            pattern = r'\b' + re.escape(agency) + r'\b'
+
+            # Define the filtered DataFrame for the current agency using the regex
+            filtered_data = cleaned_dataSet[cleaned_dataSet['Entity Empowered'].str.contains(pattern, na=False, regex=True)]
 
             # Save the filtered data to data.csv in the corresponding agency folder
             filtered_data.to_csv(os.path.join(agency_folder, 'data.csv'), index=False)
@@ -40,4 +44,4 @@ end_time = time.time()
 runtime = end_time - start_time
 
 print(f"CSV files have been created for {len(agencies_processed)} agencies.")
-print(f"Total runtime: {runtime:.2f} seconds.")
+print(f"Total runtime: {runtime:.5f} seconds.")
