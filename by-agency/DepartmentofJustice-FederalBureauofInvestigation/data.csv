@@ -1,6 +1,6 @@
-Citation,Entity Empowered,Triggering Event,Location
-18 U.S.C. § 2332a,"Department of Justice,Department of Justice - Federal Bureau of Investigation","Terrorism,Act of War",Both
-5 C.F.R. § 2601.203-.204;,"Department of Defense,Department of Justice,Department of State,Department of Homeland Security,Department of the Treasury,Environmental Protection Agency,Department of Justice - Federal Bureau of Investigation,Department of Health and Human Services","Presidential Emergency Declarations,Presidential Major Disaster Declaration",Domestic
-18 U.S.C. § 793,"Department of Justice - Federal Bureau of Investigation,Department of Justice","NEA Emergency Declaration,Act of War,Declaration of War",Both
-18 U.S.C. § 2153,Department of Justice - Federal Bureau of Investigation,"NEA Emergency Declaration,Act of War,Declaration of War",Both
-18 U.S.C. § 2154,Department of Justice - Federal Bureau of Investigation,"NEA Emergency Declaration,Act of War,Declaration of War",Both
+Citation,Entity Empowered,Triggering Event,Location,Powers Invoked,Specific Agency
+18 U.S.C. § 2332a,"Department of Justice,Department of Justice - Federal Bureau of Investigation","Terrorism,Act of War",Both,Criminal Offense,Department of Justice - Federal Bureau of Investigation
+5 C.F.R. § 2601.203-.204;,"Department of Defense,Department of Justice,Department of State,Department of Homeland Security,Department of the Treasury,Environmental Protection Agency,Department of Justice - Federal Bureau of Investigation,Department of Health and Human Services","Presidential Emergency Declarations,Presidential Major Disaster Declaration",Domestic,"Strategies and General Preparedness Efforts,Response Leadership,Mission Assignment/Response Coordination",Department of Justice - Federal Bureau of Investigation
+18 U.S.C. § 793,"Department of Justice - Federal Bureau of Investigation,Department of Justice","NEA Emergency Declaration,Act of War,Declaration of War",Both,Criminal Offense,Department of Justice - Federal Bureau of Investigation
+18 U.S.C. § 2153,Department of Justice - Federal Bureau of Investigation,"NEA Emergency Declaration,Act of War,Declaration of War",Both,Criminal Offense,Department of Justice - Federal Bureau of Investigation
+18 U.S.C. § 2154,Department of Justice - Federal Bureau of Investigation,"NEA Emergency Declaration,Act of War,Declaration of War",Both,Criminal Offense,Department of Justice - Federal Bureau of Investigation

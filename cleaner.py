@@ -1,46 +1,24 @@
-import pandas as pd
-import file_utils
 import os
-import time
-import re
 
-start_time = time.time()
+# Define the parent directory where the agency folders are located
+parent_dir = 'by-agency'
 
-fullDataSet = pd.read_csv(file_utils.get_airtable())
+# Initialize a counter for deleted files
+deleted_count = 0
 
-cleaned_dataSet = fullDataSet[['Citation', 'Entity Empowered', 'Triggering Event', 'Location']]
+# Iterate through each agency folder
+for agency_folder in os.listdir(parent_dir):
+    folder_path = os.path.join(parent_dir, agency_folder)
 
-cleaned_dataSet.to_csv('flowChartData.csv', index=False)
+    # Check if it's a directory
+    if os.path.isdir(folder_path):
+        # Iterate through files in the agency folder
+        for filename in os.listdir(folder_path):
+            if filename.endswith('.png'):
+                file_path = os.path.join(folder_path, filename)
+                os.remove(file_path)  # Delete the .png file
+                print(f"Deleted: {file_path}")
+                deleted_count += 1  # Increment the counter
 
-# Create a directory for agency-specific files
-output_dir = 'by-agency'
-os.makedirs(output_dir, exist_ok=True)
-
-# Parse the "Entity Empowered" column and split by commas
-agencies_processed = set()  # To keep track of processed agencies
-for index, row in cleaned_dataSet.iterrows():
-    agencies = row['Entity Empowered'].split(',')
-    for agency in agencies:
-        agency = agency.strip()  # Remove leading/trailing whitespace
-        if agency not in agencies_processed:
-            # Create a subfolder for the agency (without spaces)
-            agency_folder = os.path.join(output_dir, agency.replace(" ", ""))
-            os.makedirs(agency_folder, exist_ok=True)
-
-            # Create a regex pattern to match the exact agency name
-            pattern = r'\b' + re.escape(agency) + r'\b'
-
-            # Define the filtered DataFrame for the current agency using the regex
-            filtered_data = cleaned_dataSet[cleaned_dataSet['Entity Empowered'].str.contains(pattern, na=False, regex=True)]
-
-            # Save the filtered data to data.csv in the corresponding agency folder
-            filtered_data.to_csv(os.path.join(agency_folder, 'data.csv'), index=False)
-
-            # Add the agency to the processed set
-            agencies_processed.add(agency)
-
-print(f"CSV files have been created for {len(agencies_processed)} agencies.")
-# runtime calculator
-end_time = time.time()
-runtime = end_time - start_time
-print(f"Total runtime: {runtime:.5f} seconds.")
+# Print the total number of deleted files
+print(f"Total .png files deleted: {deleted_count}")
