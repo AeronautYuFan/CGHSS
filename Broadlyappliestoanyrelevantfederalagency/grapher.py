@@ -14,43 +14,47 @@ os.makedirs(output_dir, exist_ok=True)
 def create_graph(row, index):
     G = nx.DiGraph()
 
-    # Split the triggering events, locations, and powers invoked into lists
-    triggering_events = row["Triggering Event"].split(",")
-    locations = row["Location"].split(",")
-    powers_invoked = row["Powers Invoked"].split(",")
-    citation = row["Citation"]
-    agency = row["Specific Agency"]
+    # Parse the row data
+    triggering_events = row['Triggering Event'].split(',')
+    locations = row['Location'].split(',')
+    powers_invoked = row['Powers Invoked'].split(',')
+    citation = row['Citation']
+    agency = row['Specific Agency']
 
-    # Add nodes and edges for each triggering event
+    # Add nodes for each part of the structure and connect them
     for event in triggering_events:
-        event = event.strip()
-        # Add a node for each location linked from each triggering event
-        for loc in locations:
-            loc = loc.strip()
-            G.add_edge(event, loc)
+        event_node = event.strip()
+        G.add_node(event_node, label=event_node)
+        
+        for location in locations:
+            location_node = location.strip()
+            G.add_node(location_node, label=location_node)
+            G.add_edge(event_node, location_node)
             
-            # Add nodes for powers invoked, connecting from each location node
             for power in powers_invoked:
-                power = power.strip()
-                G.add_edge(loc, power)
-
-                # Add the citation and specific agency as the final node
-                G.add_edge(power, citation)
-                G.nodes[citation]["label"] = f"{citation}\n{agency}"
+                power_node = power.strip()
+                G.add_node(power_node, label=power_node)
+                G.add_edge(location_node, power_node)
+                
+                # Add citation at the end of each power node
+                G.add_node(citation, label=citation)
+                G.add_edge(power_node, citation)
 
     # Draw the graph
     plt.figure(figsize=(12, 8))
-    pos = nx.spring_layout(G)  # Layout for visualization
-    labels = nx.get_node_attributes(G, 'label')
-    nx.draw(G, pos, with_labels=True, labels=labels, node_size=3000, node_color="lightblue", font_size=8, font_weight="bold", arrows=True)
-    plt.title(f"Graph for {citation}")
-    
-    # Save the graph as an image
-    plt.savefig(f"{output_dir}/graph_{index}_{citation}.png")
+    pos = nx.spring_layout(G)  # Layout for a tree structure
+    nx.draw(G, pos, with_labels=True, node_size=2000, node_color="lightblue", font_size=10, font_weight="bold", edge_color="gray", arrows=True)
+
+    # Add the agency name in the top left corner
+    plt.text(0.05, 0.95, f"Agency: {agency}", fontsize=12, ha='left', va='top', transform=plt.gca().transAxes)
+
+    # Save the figure
+    file_path = os.path.join(output_dir, f"graph_{index}.png")
+    plt.savefig(file_path, format="png")
     plt.close()
 
-# Generate graphs for each row in the CSV
+# Create a graph for each row in the DataFrame
 for index, row in df.iterrows():
     create_graph(row, index)
 
-print(f"Graphs saved in the '{output_dir}' directory.")
+print("Graphs have been generated and saved in the 'graph_images' folder.")
