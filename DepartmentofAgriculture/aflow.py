@@ -30,7 +30,7 @@ class aflow:
 
         with schemdraw.Drawing() as d:
             # Set the background color to white (or any color you prefer)
-            d.background = 'white'  # You can change this to any color, e.g., 'lightgray'
+            d.background = '#FFFFFF'  # You can change this to any color, e.g., 'lightgray'
 
             # Sets up event
             w, h, str_ = self._format_box(triggering_event)
