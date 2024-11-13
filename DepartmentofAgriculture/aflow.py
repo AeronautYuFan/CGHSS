@@ -30,7 +30,7 @@ class aflow:
 
         with schemdraw.Drawing() as d:
             # Set the background color to white (or any color you prefer)
-            d.background = '#FFFFFF'  # You can change this to any color, e.g., 'lightgray'
+            d.background = 'white'  # You can change this to any color, e.g., 'lightgray'
 
             # Sets up event
             w, h, str_ = self._format_box(triggering_event)
@@ -45,15 +45,21 @@ class aflow:
                 self.save_flow(save_path)
 
     
-    def save_flow(self, output_string, dpi=300):
+    def save_flow(self, output_string, dpi=300, file_format='png'):
         """
-        Saves the generated flow diagram.
+        Saves the generated flow diagram with a white background.
 
         Args:
             output_string (str): Filename to save the diagram to.
             dpi (int, optional): Resolution of the saved image. Defaults to 300.
+            file_format (str, optional): Format of the saved image. Supports 'png' or 'jpg'.
         """
+        # Ensure the output format supports a non-transparent background
+        if not output_string.lower().endswith(('.png', '.jpg', '.jpeg')):
+            output_string += f".{file_format}"
+        
         print(f"Attempting to save flow diagram to {output_string}...")
+        # Save the diagram with the specified dpi and format, keeping the white background
         self.d.save(output_string, dpi=dpi)
 
     def _make_dict(self, triggering_event):
