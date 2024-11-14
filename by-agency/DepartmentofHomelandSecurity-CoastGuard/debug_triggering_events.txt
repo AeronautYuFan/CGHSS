@@ -1,0 +1,32 @@
+All Triggering Events in DepartmentofHomelandSecurity-CoastGuard:
+Terrorism,Act of War
+NEA Emergency Declaration,Act of War,Declaration of War
+Act of War,Declaration of War,NEA Emergency Declaration
+Act of War,Declaration of War,NEA Emergency Declaration
+Act of War,Declaration of War,NEA Emergency Declaration
+Act of War,NEA Emergency Declaration,Declaration of War
+Act of War,NEA Emergency Declaration,Declaration of War
+NEA Emergency Declaration,Act of War,Declaration of War
+NEA Emergency Declaration,Act of War,Declaration of War
+Act of War,NEA Emergency Declaration,Declaration of War
+Act of War,NEA Emergency Declaration,Declaration of War
+NEA Emergency Declaration,Declaration of War,Act of War
+NEA Emergency Declaration,Act of War,Declaration of War
+NEA Emergency Declaration,Declaration of War,Act of War
+NEA Emergency Declaration,Act of War,Declaration of War
+NEA Emergency Declaration,Declaration of War,Act of War
+NEA Emergency Declaration,Declaration of War,Act of War
+NEA Emergency Declaration,Declaration of War,Act of War
+NEA Emergency Declaration,Declaration of War,Act of War
+NEA Emergency Declaration,Declaration of War,Act of War
+NEA Emergency Declaration,Declaration of War,Act of War
+NEA Emergency Declaration,Declaration of War,Act of War
+No triggering event - Capacity Building
+
+Unique Triggering Events:
+NEA Emergency Declaration,Declaration of War,Act of War
+Terrorism,Act of War
+Act of War,Declaration of War,NEA Emergency Declaration
+Act of War,NEA Emergency Declaration,Declaration of War
+NEA Emergency Declaration,Act of War,Declaration of War
+No triggering event - Capacity Building

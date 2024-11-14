@@ -1,6 +1,7 @@
 import pandas as pd
 import schemdraw
 from schemdraw.flow import *
+import matplotlib
 
 
 class aflow:

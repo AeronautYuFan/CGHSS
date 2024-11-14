@@ -1,0 +1,27 @@
+All Triggering Events in DepartmentofTransportation:
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+Natural Disaster,Health Emergency,Terrorism,Act of War,Potential Public Health Emergency
+Natural Disaster,Health Emergency,Potential Public Health Emergency,Act of War,Terrorism
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+Presidential Emergency Declarations,Presidential Major Disaster Declaration
+No triggering event - Capacity Building
+NEA Emergency Declaration,Declaration of War,Act of War
+NEA Emergency Declaration,Act of War,Declaration of War
+NEA Emergency Declaration,Act of War,Declaration of War
+Natural Disaster,Act of War,Terrorism,NEA Emergency Declaration
+NEA Emergency Declaration
+NEA Emergency Declaration
+
+Unique Triggering Events:
+NEA Emergency Declaration,Declaration of War,Act of War
+Natural Disaster,Act of War,Terrorism,NEA Emergency Declaration
+NEA Emergency Declaration
+NEA Emergency Declaration,Act of War,Declaration of War
+Presidential Emergency Declarations,Presidential Major Disaster Declaration
+No triggering event - Capacity Building
+Natural Disaster,Health Emergency,Terrorism,Act of War,Potential Public Health Emergency
+Natural Disaster,Health Emergency,Potential Public Health Emergency,Act of War,Terrorism

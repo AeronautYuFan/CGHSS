@@ -1,0 +1,11 @@
+All Triggering Events in FoodandDrugAdministration:
+No triggering event - Capacity Building
+Health Emergency
+PHSA Emergency Declaration
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+
+Unique Triggering Events:
+PHSA Emergency Declaration
+No triggering event - Capacity Building
+Health Emergency

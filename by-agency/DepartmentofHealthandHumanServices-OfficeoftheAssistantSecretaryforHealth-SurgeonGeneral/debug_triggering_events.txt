@@ -1,0 +1,17 @@
+All Triggering Events in DepartmentofHealthandHumanServices-OfficeoftheAssistantSecretaryforHealth-SurgeonGeneral:
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+Potential Public Health Emergency
+Potential Public Health Emergency
+Act of War,Declaration of War,Potential Public Health Emergency
+Potential Public Health Emergency
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+Potential Public Health Emergency
+
+Unique Triggering Events:
+Potential Public Health Emergency
+No triggering event - Capacity Building
+Act of War,Declaration of War,Potential Public Health Emergency

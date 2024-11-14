@@ -1,0 +1,140 @@
+All Triggering Events in FederalEmergencyManagementAgency:
+Natural Disaster,Act of War,Health Emergency,No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+Health Emergency
+Health Emergency
+Health Emergency
+Health Emergency
+Health Emergency
+Health Emergency
+Health Emergency
+Health Emergency
+Health Emergency
+Health Emergency
+Health Emergency
+Health Emergency
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+Health Emergency
+Health Emergency
+Health Emergency
+Health Emergency
+Health Emergency
+Health Emergency
+Presidential Major Disaster Declaration
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+Presidential Emergency Declarations,Presidential Major Disaster Declaration
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building,Presidential Emergency Declarations,Presidential Major Disaster Declaration
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+Presidential Major Disaster Declaration,Presidential Emergency Declarations
+No triggering event - Capacity Building
+Act of War,Terrorism,Presidential Major Disaster Declaration
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+Presidential Major Disaster Declaration
+Health Emergency,Natural Disaster,Terrorism,Act of War,Potential Public Health Emergency
+No triggering event - Capacity Building,Presidential Emergency Declarations,Presidential Major Disaster Declaration
+Presidential Emergency Declarations,Presidential Major Disaster Declaration
+Presidential Major Disaster Declaration,Presidential Emergency Declarations
+Presidential Major Disaster Declaration
+Natural Disaster,Health Emergency,Act of War,Terrorism
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+Presidential Major Disaster Declaration
+Presidential Major Disaster Declaration
+Presidential Major Disaster Declaration,Presidential Emergency Declarations
+Presidential Major Disaster Declaration,Presidential Emergency Declarations
+Presidential Emergency Declarations,Presidential Major Disaster Declaration
+Presidential Emergency Declarations,Presidential Major Disaster Declaration
+Presidential Emergency Declarations,Presidential Major Disaster Declaration
+No triggering event - Capacity Building
+Presidential Emergency Declarations,Presidential Major Disaster Declaration
+Presidential Emergency Declarations,Presidential Major Disaster Declaration,No triggering event - Capacity Building
+No triggering event - Capacity Building
+Presidential Emergency Declarations,Presidential Major Disaster Declaration,No triggering event - Capacity Building
+No triggering event - Capacity Building
+Presidential Emergency Declarations,Presidential Major Disaster Declaration
+Presidential Major Disaster Declaration
+Natural Disaster,Health Emergency,Act of War,Terrorism
+Natural Disaster,Health Emergency,Act of War,Terrorism
+Presidential Major Disaster Declaration
+Presidential Major Disaster Declaration
+Presidential Major Disaster Declaration
+Presidential Major Disaster Declaration
+Presidential Major Disaster Declaration
+Presidential Major Disaster Declaration
+Natural Disaster,Health Emergency,Terrorism,Act of War
+Natural Disaster,Health Emergency,Terrorism,Act of War
+Natural Disaster,Health Emergency,Terrorism,Act of War
+Presidential Emergency Declarations
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+Presidential Emergency Declarations,Presidential Major Disaster Declaration
+Natural Disaster,Health Emergency,Act of War,Terrorism
+Presidential Emergency Declarations,Presidential Major Disaster Declaration,No triggering event - Capacity Building
+Presidential Emergency Declarations,Presidential Major Disaster Declaration
+No triggering event - Capacity Building
+Receipt of federal funding
+Presidential Major Disaster Declaration
+Presidential Major Disaster Declaration
+Presidential Emergency Declarations,Presidential Major Disaster Declaration
+Presidential Major Disaster Declaration
+No triggering event - Capacity Building
+Presidential Emergency Declarations
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building,Presidential Emergency Declarations,Presidential Major Disaster Declaration
+No triggering event - Capacity Building,Presidential Emergency Declarations,Presidential Major Disaster Declaration
+Presidential Major Disaster Declaration
+No triggering event - Capacity Building,Presidential Emergency Declarations,Presidential Major Disaster Declaration
+Presidential Emergency Declarations
+Presidential Emergency Declarations,Presidential Major Disaster Declaration
+Presidential Emergency Declarations,Presidential Major Disaster Declaration
+Presidential Emergency Declarations,Presidential Major Disaster Declaration
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building,Presidential Major Disaster Declaration
+Presidential Emergency Declarations,Presidential Major Disaster Declaration
+Presidential Major Disaster Declaration
+Natural Disaster,Health Emergency
+Presidential Major Disaster Declaration
+Presidential Emergency Declarations,Presidential Major Disaster Declaration,No triggering event - Capacity Building
+
+Unique Triggering Events:
+Presidential Major Disaster Declaration,Presidential Emergency Declarations
+Presidential Emergency Declarations
+Presidential Major Disaster Declaration
+Natural Disaster,Health Emergency,Terrorism,Act of War
+Act of War,Terrorism,Presidential Major Disaster Declaration
+Natural Disaster,Health Emergency,Act of War,Terrorism
+Presidential Emergency Declarations,Presidential Major Disaster Declaration
+No triggering event - Capacity Building
+Health Emergency,Natural Disaster,Terrorism,Act of War,Potential Public Health Emergency
+Receipt of federal funding
+Natural Disaster,Health Emergency
+No triggering event - Capacity Building,Presidential Emergency Declarations,Presidential Major Disaster Declaration
+Natural Disaster,Act of War,Health Emergency,No triggering event - Capacity Building
+Health Emergency
+Presidential Emergency Declarations,Presidential Major Disaster Declaration,No triggering event - Capacity Building
+No triggering event - Capacity Building,Presidential Major Disaster Declaration

@@ -1,0 +1,16 @@
+All Triggering Events in DepartmentofCommerce:
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+Defense Production Act invocation
+Natural Disaster,Act of War,Presidential Emergency Declarations,Presidential Major Disaster Declaration
+Act of War,Declaration of War
+Presidential Major Disaster Declaration,Presidential Emergency Declarations
+
+Unique Triggering Events:
+Presidential Major Disaster Declaration,Presidential Emergency Declarations
+Defense Production Act invocation
+No triggering event - Capacity Building
+Act of War,Declaration of War
+Natural Disaster,Act of War,Presidential Emergency Declarations,Presidential Major Disaster Declaration
