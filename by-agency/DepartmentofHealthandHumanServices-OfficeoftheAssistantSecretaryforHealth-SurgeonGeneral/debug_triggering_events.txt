@@ -12,7 +12,6 @@ No triggering event - Capacity Building
 Potential Public Health Emergency
 
 Unique Triggering Events:
-Act of War
-Declaration of War
 No triggering event - Capacity Building
 Potential Public Health Emergency
+Act of War,Declaration of War,Potential Public Health Emergency

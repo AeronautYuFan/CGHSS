@@ -24,10 +24,9 @@ Natural Disaster,Act of War,Presidential Emergency Declarations,Presidential Maj
 No triggering event - Capacity Building
 
 Unique Triggering Events:
-Act of War
-Declaration of War
-NEA Emergency Declaration
-Natural Disaster
+Act of War,Declaration of War,NEA Emergency Declaration
+Natural Disaster,Act of War,Presidential Emergency Declarations,Presidential Major Disaster Declaration
+NEA Emergency Declaration,Act of War,Declaration of War
 No triggering event - Capacity Building
-Presidential Emergency Declarations
-Presidential Major Disaster Declaration
+NEA Emergency Declaration,Declaration of War,Act of War
+Act of War,NEA Emergency Declaration,Declaration of War

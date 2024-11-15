@@ -2,8 +2,4 @@ All Triggering Events in DepartmentofTransportation-FederalRailroadAdministratio
 Natural Disaster,Health Emergency,Potential Public Health Emergency,Act of War,Terrorism
 
 Unique Triggering Events:
-Act of War
-Health Emergency
-Natural Disaster
-Potential Public Health Emergency
-Terrorism
+Natural Disaster,Health Emergency,Potential Public Health Emergency,Act of War,Terrorism

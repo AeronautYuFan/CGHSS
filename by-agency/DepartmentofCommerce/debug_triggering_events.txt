@@ -9,10 +9,8 @@ Act of War,Declaration of War
 Presidential Major Disaster Declaration,Presidential Emergency Declarations
 
 Unique Triggering Events:
-Act of War
-Declaration of War
-Defense Production Act invocation
-Natural Disaster
+Presidential Major Disaster Declaration,Presidential Emergency Declarations
+Natural Disaster,Act of War,Presidential Emergency Declarations,Presidential Major Disaster Declaration
+Act of War,Declaration of War
 No triggering event - Capacity Building
-Presidential Emergency Declarations
-Presidential Major Disaster Declaration
+Defense Production Act invocation

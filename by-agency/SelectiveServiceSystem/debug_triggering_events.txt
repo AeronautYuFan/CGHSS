@@ -2,6 +2,4 @@ All Triggering Events in SelectiveServiceSystem:
 Declaration of War,Act of War,NEA Emergency Declaration
 
 Unique Triggering Events:
-Act of War
-Declaration of War
-NEA Emergency Declaration
+Declaration of War,Act of War,NEA Emergency Declaration

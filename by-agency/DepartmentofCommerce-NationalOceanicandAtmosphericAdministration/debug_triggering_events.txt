@@ -2,7 +2,4 @@ All Triggering Events in DepartmentofCommerce-NationalOceanicandAtmosphericAdmin
 Natural Disaster,Act of War,Presidential Emergency Declarations,Presidential Major Disaster Declaration
 
 Unique Triggering Events:
-Act of War
-Natural Disaster
-Presidential Emergency Declarations
-Presidential Major Disaster Declaration
+Natural Disaster,Act of War,Presidential Emergency Declarations,Presidential Major Disaster Declaration
