@@ -8,8 +8,9 @@ NEA Emergency Declaration,PHSA Emergency Declaration,Presidential Major Disaster
 No triggering event - Capacity Building
 
 Unique Triggering Events:
-NEA Emergency Declaration,PHSA Emergency Declaration,Presidential Major Disaster Declaration
-Health Emergency,Presidential Emergency Declarations,Presidential Major Disaster Declaration,NEA Emergency Declaration
-PHSA Emergency Declaration
+Health Emergency
+NEA Emergency Declaration
 No triggering event - Capacity Building
-Health Emergency,Presidential Emergency Declarations,Presidential Major Disaster Declaration
+PHSA Emergency Declaration
+Presidential Emergency Declarations
+Presidential Major Disaster Declaration

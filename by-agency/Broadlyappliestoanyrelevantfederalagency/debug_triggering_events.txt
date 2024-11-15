@@ -32,12 +32,9 @@ No triggering event - Capacity Building
 No triggering event - Capacity Building
 
 Unique Triggering Events:
-NEA Emergency Declaration,Declaration of War,Act of War
-NEA Emergency Declaration,Presidential Major Disaster Declaration,Presidential Emergency Declarations
-NEA Emergency Declaration,Presidential Emergency Declarations,Presidential Major Disaster Declaration
+Act of War
+Declaration of War
 NEA Emergency Declaration
+No triggering event - Capacity Building
 Presidential Emergency Declarations
 Presidential Major Disaster Declaration
-Presidential Emergency Declarations,Presidential Major Disaster Declaration
-No triggering event - Capacity Building
-Presidential Emergency Declarations,Presidential Major Disaster Declaration,No triggering event - Capacity Building

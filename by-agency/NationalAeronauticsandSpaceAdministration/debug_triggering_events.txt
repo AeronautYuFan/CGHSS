@@ -2,4 +2,9 @@ All Triggering Events in NationalAeronauticsandSpaceAdministration:
 Terrorism,Act of War,Presidential Major Disaster Declaration,Presidential Emergency Declarations,NEA Emergency Declaration,Natural Disaster
 
 Unique Triggering Events:
-Terrorism,Act of War,Presidential Major Disaster Declaration,Presidential Emergency Declarations,NEA Emergency Declaration,Natural Disaster
+Act of War
+NEA Emergency Declaration
+Natural Disaster
+Presidential Emergency Declarations
+Presidential Major Disaster Declaration
+Terrorism

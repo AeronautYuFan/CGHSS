@@ -20,10 +20,13 @@ PHSA Emergency Declaration
 No triggering event - Capacity Building
 
 Unique Triggering Events:
-Terrorism,Act of War
-PHSA Emergency Declaration
-Law enforcement emergency
-NEA Emergency Declaration,Act of War,Declaration of War
-Presidential Emergency Declarations,Presidential Major Disaster Declaration
-No triggering event - Capacity Building
+Act of War
+Declaration of War
 Health Emergency
+Law enforcement emergency
+NEA Emergency Declaration
+No triggering event - Capacity Building
+PHSA Emergency Declaration
+Presidential Emergency Declarations
+Presidential Major Disaster Declaration
+Terrorism

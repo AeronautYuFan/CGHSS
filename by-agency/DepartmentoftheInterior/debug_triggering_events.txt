@@ -8,5 +8,7 @@ No triggering event - Capacity Building
 No triggering event - Capacity Building
 
 Unique Triggering Events:
-NEA Emergency Declaration,Declaration of War,Act of War
+Act of War
+Declaration of War
+NEA Emergency Declaration
 No triggering event - Capacity Building

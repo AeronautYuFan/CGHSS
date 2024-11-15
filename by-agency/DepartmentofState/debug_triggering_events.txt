@@ -13,6 +13,7 @@ Presidential Emergency Declarations,Presidential Major Disaster Declaration
 No triggering event - Capacity Building
 
 Unique Triggering Events:
-Presidential Emergency Declarations,Presidential Major Disaster Declaration
-No triggering event - Capacity Building
 Health Emergency
+No triggering event - Capacity Building
+Presidential Emergency Declarations
+Presidential Major Disaster Declaration

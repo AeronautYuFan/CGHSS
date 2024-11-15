@@ -5,5 +5,6 @@ No triggering event - Capacity Building
 No triggering event - Capacity Building
 
 Unique Triggering Events:
+NEA Emergency Declaration
 No triggering event - Capacity Building
-NEA Emergency Declaration,PHSA Emergency Declaration
+PHSA Emergency Declaration

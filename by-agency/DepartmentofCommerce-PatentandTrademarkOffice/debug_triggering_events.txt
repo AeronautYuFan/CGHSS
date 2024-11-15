@@ -2,4 +2,5 @@ All Triggering Events in DepartmentofCommerce-PatentandTrademarkOffice:
 Act of War,Declaration of War
 
 Unique Triggering Events:
-Act of War,Declaration of War
+Act of War
+Declaration of War

@@ -11,9 +11,12 @@ Health Emergency
 Presidential Emergency Declarations,Presidential Major Disaster Declaration,NEA Emergency Declaration,Act of War,Declaration of War
 
 Unique Triggering Events:
-PHSA Emergency Declaration
-PHSA Emergency Declaration,Presidential Major Disaster Declaration,Presidential Emergency Declarations
-Presidential Emergency Declarations,Presidential Major Disaster Declaration,NEA Emergency Declaration,Act of War,Declaration of War
-No triggering event - Capacity Building
-Act of War,Declaration of War,Presidential Major Disaster Declaration,Natural Disaster
+Act of War
+Declaration of War
 Health Emergency
+NEA Emergency Declaration
+Natural Disaster
+No triggering event - Capacity Building
+PHSA Emergency Declaration
+Presidential Emergency Declarations
+Presidential Major Disaster Declaration

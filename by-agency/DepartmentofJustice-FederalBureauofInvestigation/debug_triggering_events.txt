@@ -6,6 +6,9 @@ NEA Emergency Declaration,Act of War,Declaration of War
 NEA Emergency Declaration,Act of War,Declaration of War
 
 Unique Triggering Events:
-NEA Emergency Declaration,Act of War,Declaration of War
-Presidential Emergency Declarations,Presidential Major Disaster Declaration
-Terrorism,Act of War
+Act of War
+Declaration of War
+NEA Emergency Declaration
+Presidential Emergency Declarations
+Presidential Major Disaster Declaration
+Terrorism
