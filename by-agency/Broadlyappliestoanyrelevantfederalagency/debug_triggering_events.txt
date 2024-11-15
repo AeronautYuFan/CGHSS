@@ -1,0 +1,43 @@
+All Triggering Events in Broadlyappliestoanyrelevantfederalagency:
+No triggering event - Capacity Building
+NEA Emergency Declaration,Presidential Emergency Declarations,Presidential Major Disaster Declaration
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+Presidential Emergency Declarations,Presidential Major Disaster Declaration
+Presidential Emergency Declarations,Presidential Major Disaster Declaration
+No triggering event - Capacity Building
+NEA Emergency Declaration,Declaration of War,Act of War
+NEA Emergency Declaration
+NEA Emergency Declaration,Presidential Major Disaster Declaration,Presidential Emergency Declarations
+No triggering event - Capacity Building
+Presidential Emergency Declarations,Presidential Major Disaster Declaration
+No triggering event - Capacity Building
+Presidential Major Disaster Declaration
+Presidential Emergency Declarations,Presidential Major Disaster Declaration
+Presidential Emergency Declarations,Presidential Major Disaster Declaration
+Presidential Emergency Declarations,Presidential Major Disaster Declaration
+Presidential Emergency Declarations,Presidential Major Disaster Declaration,No triggering event - Capacity Building
+Presidential Major Disaster Declaration
+Presidential Major Disaster Declaration
+Presidential Emergency Declarations
+Presidential Major Disaster Declaration
+Presidential Major Disaster Declaration
+Presidential Emergency Declarations,Presidential Major Disaster Declaration
+No triggering event - Capacity Building
+Presidential Major Disaster Declaration
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+
+Unique Triggering Events:
+Presidential Emergency Declarations
+NEA Emergency Declaration,Presidential Emergency Declarations,Presidential Major Disaster Declaration
+Presidential Emergency Declarations,Presidential Major Disaster Declaration
+NEA Emergency Declaration,Presidential Major Disaster Declaration,Presidential Emergency Declarations
+Presidential Major Disaster Declaration
+Presidential Emergency Declarations,Presidential Major Disaster Declaration,No triggering event - Capacity Building
+NEA Emergency Declaration
+No triggering event - Capacity Building
+NEA Emergency Declaration,Declaration of War,Act of War

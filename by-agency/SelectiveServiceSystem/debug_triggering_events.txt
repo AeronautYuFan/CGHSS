@@ -1,0 +1,5 @@
+All Triggering Events in SelectiveServiceSystem:
+Declaration of War,Act of War,NEA Emergency Declaration
+
+Unique Triggering Events:
+Declaration of War,Act of War,NEA Emergency Declaration

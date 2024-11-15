@@ -1,0 +1,5 @@
+All Triggering Events in DepartmentofTransportation-FederalAviationAdministration:
+Natural Disaster,Health Emergency,Terrorism,Act of War,Potential Public Health Emergency
+
+Unique Triggering Events:
+Natural Disaster,Health Emergency,Terrorism,Act of War,Potential Public Health Emergency

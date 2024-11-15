@@ -1,0 +1,7 @@
+All Triggering Events in DepartmentofHomelandSecurity-TransportationSecurityAdministration:
+Natural Disaster,Health Emergency,Terrorism,Act of War,Potential Public Health Emergency
+NEA Emergency Declaration
+
+Unique Triggering Events:
+Natural Disaster,Health Emergency,Terrorism,Act of War,Potential Public Health Emergency
+NEA Emergency Declaration

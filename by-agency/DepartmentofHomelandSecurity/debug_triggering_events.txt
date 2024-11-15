@@ -1,0 +1,102 @@
+All Triggering Events in DepartmentofHomelandSecurity:
+Natural Disaster,Act of War,Health Emergency,No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+Health Emergency
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+Health Emergency
+Health Emergency
+Health Emergency
+Health Emergency
+Health Emergency
+Health Emergency
+Health Emergency
+Health Emergency
+Health Emergency
+Health Emergency
+Health Emergency
+Health Emergency
+Health Emergency
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+Health Emergency
+Health Emergency
+Health Emergency
+Health Emergency
+Health Emergency
+Health Emergency
+Natural Disaster,Health Emergency,Terrorism,Act of War,Potential Public Health Emergency
+Natural Disaster,Health Emergency,Potential Public Health Emergency
+No triggering event - Capacity Building
+Terrorism,Act of War
+Presidential Major Disaster Declaration
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+Presidential Emergency Declarations,Presidential Major Disaster Declaration
+Presidential Major Disaster Declaration
+Terrorism,Health Emergency,Natural Disaster
+NEA Emergency Declaration,Act of War,Declaration of War
+Act of War,Declaration of War,NEA Emergency Declaration
+Act of War,Declaration of War,NEA Emergency Declaration
+Act of War,Declaration of War,NEA Emergency Declaration
+Act of War,NEA Emergency Declaration,Declaration of War
+Act of War,NEA Emergency Declaration,Declaration of War
+NEA Emergency Declaration,Act of War,Declaration of War
+NEA Emergency Declaration,Act of War,Declaration of War
+Act of War,NEA Emergency Declaration,Declaration of War
+Act of War,NEA Emergency Declaration,Declaration of War
+NEA Emergency Declaration,Declaration of War,Act of War
+NEA Emergency Declaration,Act of War,Declaration of War
+NEA Emergency Declaration,Declaration of War,Act of War
+NEA Emergency Declaration,Act of War,Declaration of War
+NEA Emergency Declaration,Declaration of War,Act of War
+NEA Emergency Declaration,Declaration of War,Act of War
+NEA Emergency Declaration,Declaration of War,Act of War
+NEA Emergency Declaration,Declaration of War,Act of War
+NEA Emergency Declaration,Declaration of War,Act of War
+NEA Emergency Declaration,Declaration of War,Act of War
+NEA Emergency Declaration,Declaration of War,Act of War
+NEA Emergency Declaration
+NEA Emergency Declaration
+Presidential Emergency Declarations,Presidential Major Disaster Declaration
+Presidential Major Disaster Declaration,Presidential Emergency Declarations
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+Presidential Emergency Declarations,Presidential Major Disaster Declaration
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+Presidential Emergency Declarations,Presidential Major Disaster Declaration,No triggering event - Capacity Building
+
+Unique Triggering Events:
+Presidential Major Disaster Declaration,Presidential Emergency Declarations
+Act of War,Declaration of War,NEA Emergency Declaration
+Health Emergency
+Presidential Emergency Declarations,Presidential Major Disaster Declaration
+Natural Disaster,Health Emergency,Terrorism,Act of War,Potential Public Health Emergency
+Presidential Major Disaster Declaration
+Natural Disaster,Act of War,Health Emergency,No triggering event - Capacity Building
+Terrorism,Act of War
+Presidential Emergency Declarations,Presidential Major Disaster Declaration,No triggering event - Capacity Building
+NEA Emergency Declaration
+NEA Emergency Declaration,Act of War,Declaration of War
+Terrorism,Health Emergency,Natural Disaster
+No triggering event - Capacity Building
+Natural Disaster,Health Emergency,Potential Public Health Emergency
+NEA Emergency Declaration,Declaration of War,Act of War
+Act of War,NEA Emergency Declaration,Declaration of War

@@ -1,0 +1,7 @@
+All Triggering Events in DepartmentofTransportation-FederalTransitAdministration:
+Presidential Emergency Declarations,Presidential Major Disaster Declaration
+NEA Emergency Declaration
+
+Unique Triggering Events:
+Presidential Emergency Declarations,Presidential Major Disaster Declaration
+NEA Emergency Declaration

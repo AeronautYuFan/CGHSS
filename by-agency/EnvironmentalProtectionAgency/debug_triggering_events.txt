@@ -1,0 +1,14 @@
+All Triggering Events in EnvironmentalProtectionAgency:
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+No triggering event - Capacity Building
+Presidential Emergency Declarations,Presidential Major Disaster Declaration
+NEA Emergency Declaration,Health Emergency,Act of War,Declaration of War
+
+Unique Triggering Events:
+Presidential Emergency Declarations,Presidential Major Disaster Declaration
+No triggering event - Capacity Building
+NEA Emergency Declaration,Health Emergency,Act of War,Declaration of War

@@ -1,0 +1,9 @@
+All Triggering Events in AdministrationforStrategicPreparednessandResponse:
+PHSA Emergency Declaration,NEA Emergency Declaration
+NEA Emergency Declaration,PHSA Emergency Declaration,Presidential Major Disaster Declaration
+No triggering event - Capacity Building
+
+Unique Triggering Events:
+No triggering event - Capacity Building
+PHSA Emergency Declaration,NEA Emergency Declaration
+NEA Emergency Declaration,PHSA Emergency Declaration,Presidential Major Disaster Declaration

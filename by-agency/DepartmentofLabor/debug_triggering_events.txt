@@ -1,0 +1,13 @@
+All Triggering Events in DepartmentofLabor:
+Health Emergency
+NEA Emergency Declaration,Declaration of War,Act of War
+NEA Emergency Declaration
+PHSA Emergency Declaration
+No triggering event - Capacity Building
+
+Unique Triggering Events:
+Health Emergency
+PHSA Emergency Declaration
+NEA Emergency Declaration
+No triggering event - Capacity Building
+NEA Emergency Declaration,Declaration of War,Act of War

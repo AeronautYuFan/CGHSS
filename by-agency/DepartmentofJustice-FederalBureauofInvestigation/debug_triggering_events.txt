@@ -1,0 +1,11 @@
+All Triggering Events in DepartmentofJustice-FederalBureauofInvestigation:
+Terrorism,Act of War
+Presidential Emergency Declarations,Presidential Major Disaster Declaration
+NEA Emergency Declaration,Act of War,Declaration of War
+NEA Emergency Declaration,Act of War,Declaration of War
+NEA Emergency Declaration,Act of War,Declaration of War
+
+Unique Triggering Events:
+Terrorism,Act of War
+Presidential Emergency Declarations,Presidential Major Disaster Declaration
+NEA Emergency Declaration,Act of War,Declaration of War
