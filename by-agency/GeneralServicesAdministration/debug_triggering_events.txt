@@ -9,7 +9,7 @@ NEA Emergency Declaration
 NEA Emergency Declaration
 
 Unique Triggering Events:
+Terrorism,Act of War,Presidential Major Disaster Declaration,Presidential Emergency Declarations,NEA Emergency Declaration,Natural Disaster
+NEA Emergency Declaration
 NEA Emergency Declaration,Act of War,Declaration of War
 No triggering event - Capacity Building
-NEA Emergency Declaration
-Terrorism,Act of War,Presidential Major Disaster Declaration,Presidential Emergency Declarations,NEA Emergency Declaration,Natural Disaster

@@ -3,5 +3,5 @@ Natural Disaster,Health Emergency,Terrorism,Act of War,Potential Public Health E
 NEA Emergency Declaration
 
 Unique Triggering Events:
-Natural Disaster,Health Emergency,Terrorism,Act of War,Potential Public Health Emergency
 NEA Emergency Declaration
+Natural Disaster,Health Emergency,Terrorism,Act of War,Potential Public Health Emergency

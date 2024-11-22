@@ -84,19 +84,19 @@ No triggering event - Capacity Building
 Presidential Emergency Declarations,Presidential Major Disaster Declaration,No triggering event - Capacity Building
 
 Unique Triggering Events:
-Presidential Major Disaster Declaration,Presidential Emergency Declarations
-Act of War,Declaration of War,NEA Emergency Declaration
-Health Emergency
-Presidential Emergency Declarations,Presidential Major Disaster Declaration
-Natural Disaster,Health Emergency,Terrorism,Act of War,Potential Public Health Emergency
-Presidential Major Disaster Declaration
-Natural Disaster,Act of War,Health Emergency,No triggering event - Capacity Building
-Terrorism,Act of War
-Presidential Emergency Declarations,Presidential Major Disaster Declaration,No triggering event - Capacity Building
-NEA Emergency Declaration
-NEA Emergency Declaration,Act of War,Declaration of War
-Terrorism,Health Emergency,Natural Disaster
-No triggering event - Capacity Building
 Natural Disaster,Health Emergency,Potential Public Health Emergency
 NEA Emergency Declaration,Declaration of War,Act of War
+Presidential Major Disaster Declaration
+Health Emergency
+No triggering event - Capacity Building
+Natural Disaster,Act of War,Health Emergency,No triggering event - Capacity Building
+Act of War,Declaration of War,NEA Emergency Declaration
+Presidential Major Disaster Declaration,Presidential Emergency Declarations
+NEA Emergency Declaration,Act of War,Declaration of War
+Terrorism,Health Emergency,Natural Disaster
+Presidential Emergency Declarations,Presidential Major Disaster Declaration
 Act of War,NEA Emergency Declaration,Declaration of War
+NEA Emergency Declaration
+Presidential Emergency Declarations,Presidential Major Disaster Declaration,No triggering event - Capacity Building
+Terrorism,Act of War
+Natural Disaster,Health Emergency,Terrorism,Act of War,Potential Public Health Emergency

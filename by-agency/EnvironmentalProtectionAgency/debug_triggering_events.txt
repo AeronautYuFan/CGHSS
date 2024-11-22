@@ -9,6 +9,6 @@ Presidential Emergency Declarations,Presidential Major Disaster Declaration
 NEA Emergency Declaration,Health Emergency,Act of War,Declaration of War
 
 Unique Triggering Events:
+NEA Emergency Declaration,Health Emergency,Act of War,Declaration of War
 Presidential Emergency Declarations,Presidential Major Disaster Declaration
 No triggering event - Capacity Building
-NEA Emergency Declaration,Health Emergency,Act of War,Declaration of War

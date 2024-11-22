@@ -190,29 +190,29 @@ No triggering event - Capacity Building
 Health Emergency
 
 Unique Triggering Events:
-Presidential Major Disaster Declaration,Presidential Emergency Declarations
-Presidential Emergency Declarations,Presidential Major Disaster Declaration
-PHSA Emergency Declaration,NEA Emergency Declaration
-Potential Public Health Emergency,PHSA Emergency Declaration
-Health Emergency,No triggering event - Capacity Building
-Potential Public Health Emergency
-No triggering event - Capacity Building,Presidential Emergency Declarations,Presidential Major Disaster Declaration,NEA Emergency Declaration,PHSA Emergency Declaration
-NEA Emergency Declaration,PHSA Emergency Declaration,Presidential Major Disaster Declaration
-Health Emergency,Presidential Emergency Declarations,Presidential Major Disaster Declaration
-Health Emergency,Terrorism,Presidential Emergency Declarations
-No triggering event - Capacity Building,Presidential Emergency Declarations
-PHSA Emergency Declaration,Potential Public Health Emergency
-Act of War,Declaration of War,Potential Public Health Emergency
-NEA Emergency Declaration,PHSA Emergency Declaration
-Hospital Receives Federal Funding
-PHSA Emergency Declaration,Health Emergency,Potential Public Health Emergency
 Presidential Emergency Declarations,Presidential Major Disaster Declaration,PHSA Emergency Declaration,Governor or Protectorate Emergency Declaration
-NEA Emergency Declaration,Presidential Major Disaster Declaration,Presidential Emergency Declarations
+NEA Emergency Declaration,PHSA Emergency Declaration
+NEA Emergency Declaration,PHSA Emergency Declaration,Presidential Major Disaster Declaration
 Health Emergency
-NEA Emergency Declaration,Presidential Major Disaster Declaration
-PHSA Emergency Declaration
-Presidential Emergency Declarations,Presidential Major Disaster Declaration,NEA Emergency Declaration,PHSA Emergency Declaration
-NEA Emergency Declaration,PHSA Emergency Declaration,Presidential Emergency Declarations,Presidential Major Disaster Declaration
 Potential Public Health Emergency,Health Emergency,PHSA Emergency Declaration
 Health Emergency,Presidential Emergency Declarations,Presidential Major Disaster Declaration,NEA Emergency Declaration
+Presidential Major Disaster Declaration,Presidential Emergency Declarations
+Health Emergency,Presidential Emergency Declarations,Presidential Major Disaster Declaration
+NEA Emergency Declaration,Presidential Major Disaster Declaration,Presidential Emergency Declarations
 No triggering event - Capacity Building
+Potential Public Health Emergency
+No triggering event - Capacity Building,Presidential Emergency Declarations
+Presidential Emergency Declarations,Presidential Major Disaster Declaration,NEA Emergency Declaration,PHSA Emergency Declaration
+Health Emergency,Terrorism,Presidential Emergency Declarations
+Health Emergency,No triggering event - Capacity Building
+Presidential Emergency Declarations,Presidential Major Disaster Declaration
+Act of War,Declaration of War,Potential Public Health Emergency
+PHSA Emergency Declaration,Potential Public Health Emergency
+NEA Emergency Declaration,PHSA Emergency Declaration,Presidential Emergency Declarations,Presidential Major Disaster Declaration
+PHSA Emergency Declaration
+Hospital Receives Federal Funding
+PHSA Emergency Declaration,NEA Emergency Declaration
+Potential Public Health Emergency,PHSA Emergency Declaration
+PHSA Emergency Declaration,Health Emergency,Potential Public Health Emergency
+No triggering event - Capacity Building,Presidential Emergency Declarations,Presidential Major Disaster Declaration,NEA Emergency Declaration,PHSA Emergency Declaration
+NEA Emergency Declaration,Presidential Major Disaster Declaration

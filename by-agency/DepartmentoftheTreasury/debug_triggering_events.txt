@@ -10,6 +10,6 @@ No triggering event - Capacity Building
 
 Unique Triggering Events:
 Health Emergency
-No triggering event - Capacity Building
 NEA Emergency Declaration,Act of War,Declaration of War,Health Emergency
 Presidential Emergency Declarations,Presidential Major Disaster Declaration
+No triggering event - Capacity Building

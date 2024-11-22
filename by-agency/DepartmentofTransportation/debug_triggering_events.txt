@@ -17,11 +17,11 @@ NEA Emergency Declaration
 NEA Emergency Declaration
 
 Unique Triggering Events:
-Presidential Emergency Declarations,Presidential Major Disaster Declaration
-Natural Disaster,Health Emergency,Terrorism,Act of War,Potential Public Health Emergency
+NEA Emergency Declaration,Declaration of War,Act of War
 Natural Disaster,Health Emergency,Potential Public Health Emergency,Act of War,Terrorism
-NEA Emergency Declaration
+No triggering event - Capacity Building
 Natural Disaster,Act of War,Terrorism,NEA Emergency Declaration
 NEA Emergency Declaration,Act of War,Declaration of War
-No triggering event - Capacity Building
-NEA Emergency Declaration,Declaration of War,Act of War
+Presidential Emergency Declarations,Presidential Major Disaster Declaration
+NEA Emergency Declaration
+Natural Disaster,Health Emergency,Terrorism,Act of War,Potential Public Health Emergency

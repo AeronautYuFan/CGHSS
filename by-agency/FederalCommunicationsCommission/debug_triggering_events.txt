@@ -8,8 +8,8 @@ Natural Disaster,Health Emergency,Act of War,Terrorism
 
 Unique Triggering Events:
 Health Emergency
-Presidential Emergency Declarations,Presidential Major Disaster Declaration
 Natural Disaster,Health Emergency,Act of War,Terrorism
+Presidential Emergency Declarations,Presidential Major Disaster Declaration
 Natural Disaster,Act of War,Health Emergency,Terrorism,NEA Emergency Declaration
 Natural Disaster,Health Emergency,Act of War,Terrorism,NEA Emergency Declaration
 No triggering event - Capacity Building
